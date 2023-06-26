@@ -1,0 +1,17 @@
+{
+  "name": "com.wisemonkees.util",
+  "version": "0.5.0",
+  "displayName": "Util (wisemonkees)",
+  "description": "Wise Monke ES utility package to use basic utilities such as GetMouseWorldPosition or GetRaycastObject.",
+  "unity": "2019.1",
+  "keywords": [
+    "library",
+    "utility",
+    "util"
+  ],
+  "author": {
+    "name": "Wise Monke Entertainment Studio",
+    "email": "wisemonkees@gmail.com",
+    "url": "https://wisemonkees.net"
+  }
+}
