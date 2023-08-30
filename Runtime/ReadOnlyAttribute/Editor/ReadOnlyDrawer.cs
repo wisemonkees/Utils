@@ -1,5 +1,6 @@
 namespace WiseMonkeES.Util.Editor
 {
+    #if UNITY_EDITOR
     using UnityEngine;
     using UnityEditor;
     /// <summary>
@@ -20,5 +21,6 @@ namespace WiseMonkeES.Util.Editor
             GUI.enabled = previousGUIState;
         }
     }
+    #endif
     
 }
