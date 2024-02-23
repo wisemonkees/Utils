@@ -1,9 +1,10 @@
 ﻿using System;
+using UnityEditor;
 using UnityEngine;
 
 namespace WiseMonkeES.Util
 {
-    public class MeshU
+    public static class MeshU
     {
         public static void CreateEmptyMeshArrays(int quadCount, out Vector3[] vertices, out Vector2[] uvs, out int[] triangles)
         {
@@ -74,5 +75,11 @@ namespace WiseMonkeES.Util
             uvs[index + 2] = p4;
             uvs[index + 3] = p5;
         }
+        
+        public static void SaveMesh(this Mesh mesh, string name)
+        {
+            AssetDatabase.CreateAsset(mesh, "Assets/" + name + ".asset");
+        }
+        
     }
 }
